@@ -26,6 +26,12 @@ section{
     margin: 1px;
     flex-direction: column;
 }
+.articulos{
+    display: flex; 
+    gap:10px
+
+
+}
 article{
     display: flex;
     background-color: rgba(233, 113, 15, 0.986);
@@ -35,6 +41,10 @@ article{
     max-width: 50px;
     gap:10px; /*epacio entre los contenedores*/
     margin: 1px; 
+
+}
+.articulo1{
+    flex:2;
 
 }
 footer{
