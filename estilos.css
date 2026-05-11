@@ -4,7 +4,12 @@ body{
     min-height: 100vh;
 }
 
-
+input{
+    background: #ffffff ;
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+}
 
 header{
     display: flex;

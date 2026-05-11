@@ -1,44 +1,79 @@
+:root {
+  /* Definimos nuestros "apodos" para los colores */
+  --morado-oscuro: #3b1e54;    /* Para la franja de arriba */
+  --morado-principal: #6c3483; /* Para el fondo del logo y buscador */
+  --blanco-claro: color: rgba(255, 255, 255, 0.9);     /* Para textos e iconos */
+  --gris-suave: #f8f9fa;       /* Para fondos secundarios si los necesitas */
+}
+
+/* Esto asegura que el buscador no tenga bordes extraños */
+.search-input {
+  border: none; 
+  outline: none; /* Quita el borde azul que sale al hacer clic */
+  background-color: var(--blanco-claro);
+}
+
+.Beneficios {
+    display: flex;   /* ¡Fundamental para que se pongan en fila! */
+    flex-direction: row; /* Asegura que sea una fila y no columna */
+    gap: 30px;       /* El aire entre cada beneficio */
+}
+
+.redes {
+    display: flex;       /* También en fila para que el texto y los iconos se alineen */
+    gap: 10px;
+}
+
+
 *{
     margin: 0;
-    font-family: "Rubic", sans-serif;
-    font-weight: 300;
+    font-family: "Rubik";
+    font-weight: 400;
     font-style: normal;
     font-size: 12px;
     box-sizing: border-box;
 }
 #info-encabezado{
-    background-color: #B42ADE;
+    background-color: #3b1e54; /*purpura oscuro (barra de arriba)*/
     color: aliceblue;
     display: flex;
     justify-content: space-between; /*deje un espacio entre ellos */
     align-items: center;
-    padding: 10px 20px;
+    padding: 0;
+    /* Actualizo el padding de 10px a 100px  para que se vea mas centrado*/
+    margin: 0;
+    gap: 5px;
+    height: 40px;
 }
 #info-general{
-    background-color: rgba(147, 42, 168, 0.637);
-    color: rgba(168, 26, 204, 0.733);
+    background-color: #6c3483;
+    color: #631d81;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2px 2px;
+    
 
 
 }
 #info-general img{
     width: 60px; 
+    flex-grow: 1;
+    margin-top: auto;
 }
 #buscar{ /*cuadro del buscador*/
     max-width: 400px;
     height: 45px;
     font-size: 16px;
     border-radius: 9px; /*entre mas grande el radio, mas es el #*/
-    border:1px solid rgb(54, 43, 43);
+    flex-grow: 1; /*estirar toodo lo que se pueda*/
+    margin: 0 20px;
 }
 #ingresar{
     width: 150px;
     height: 50px;
     font-size: 16px;
-    background-color:  #ce91e0;
+    background-color:  #6c3483;
     color: aliceblue;
     border:none;
 }
@@ -173,7 +208,7 @@ article h2{
     height: auto; 
 }
 .caja-imagenes img{/*vayase a caja de imagen, agarre las etiquetas de caja de imagen, dividalas, que crezcan de pende del contenedor*/
-    flex: 1 1 cal(50% -10px);
+    flex: 1 1 calc(50% - 10px);
     height: 100px;
     border-radius: 10px;
     object-fit: cover;
